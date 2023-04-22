@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="chat-container">
+    <div class="chat-messages" id="chat-messages">
+        <!-- Messages will be added here dynamically -->
+    </div>
+    <div class="chat-input">
+        <input type="text" id="chat-input-field" placeholder="Type your message...">
+        <button id="chat-send-button"><i class="fas fa-paper-plane"></i></button>
+    </div>
+    <script src="../static/js/chat.js"></script>
+</div>
+{% endblock %}
